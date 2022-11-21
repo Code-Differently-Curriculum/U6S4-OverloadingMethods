@@ -17,6 +17,13 @@ In the package `partA.ex01` look at the file `PlayerTest`
   * Calling this constructor should initialize fields with the
   following values
   * Instantiate an object with this constructor
+```
+Variable: p02
+Name: null
+Height: 0.0
+yearsInLeague: 0
+
+```
 
 #### Step 03
 * Write a method that prints every Player field
