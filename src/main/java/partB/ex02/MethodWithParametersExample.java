@@ -1,10 +1,15 @@
 package partB.ex02;
 
 public class MethodWithParametersExample {
+
+    public static String sumTwoNumbers(int a, int b){
+        String response = "";
+        response += (a + b);
+        return response;
+    }
     public static void main(String[] args) {
-        sumTwoNumbers(5,2);
+        String output =  sumTwoNumbers(5,2);
+        System.out.print(output);
     }
-    static void sumTwoNumbers(int a, int b){
-        System.out.println(a + b);
-    }
+
 }

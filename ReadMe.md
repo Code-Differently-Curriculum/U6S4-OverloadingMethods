@@ -2,7 +2,8 @@
 
 * Part A - Foundations 7.4
 * Part B - Foundations Practice
-*
+* Part C Algorithm Challenge
+
 ## Part A
 
 ### Exercise 01
@@ -38,6 +39,18 @@ yearsInLeague: 0
 * Identify and minimize any repeated code in the
   constructor and display() methods
 
+Your program is working correctly, if when run, the following is the output:
+
+```
+Name: Kyrie
+Height: 1.88
+yearsInLeague: 11
+Name: Kyrie
+Height: 1.88
+yearsInLeague: 11
+I'll have my win.
+
+```
 
 ## Part B
 
@@ -54,14 +67,14 @@ In the package `partB.ex01` complete the `Method` per the following:
 * Create a program with a method (outside of the main method) that asks two questions, saves each user response, and eventually prints it back out to the user.
 * Call the question method inside of the main method.
 
-Your program is working correctly, if when run, the following is the output (Abe first name Lincoln last name):
+Your program is working correctly, if when run, the following is the output:
 
 ```
 What's your first name?
 Stephanie
 And how old are you Stephanie?
 28
-Gio I see that you're 28 years old.
+Stephanie I see that you're 28 years old.
 
 ```
 
@@ -115,3 +128,33 @@ First I print the number y and then the character 1
 ```
 
 > Use OverloadingMethodExample for reference.
+
+## Part C
+### Problem 1
+Again, we are looking for numbers that are within the range 10...20 inclusive.
+But this time we are looking for the max value within that range out of the 2 positive int values.
+
+Return the larger value that is in the range 10...20,
+or return 0 if neither number is in that range.
+
+Example:
+```java
+larger1020(11, 19) --> 19
+larger1020(19, 11) --> 19
+larger1020(11, 9) --> 11
+```
+### Problem 2
+Create the string to look like it's going up; like a hill. To do this we need to take the last 3 characters
+and make them uppercase. Even if there's less than 3 characters, just make whatever is there uppercase.
+Doing this allows the string to look like it's going up and down depending on if begins with uppercase or not.
+
+Tip: str.toUpperCase() returns the uppercase version of a string
+
+Return a new string where the last 3 characters are now in upper case.
+
+Example:
+```java
+goingUp("Hello") --> "HeLLO"
+goingUp("hi there") --> "hi thERE"
+goingUp("hi") --> "HI"
+```
